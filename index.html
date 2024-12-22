@@ -26,9 +26,9 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <!-- Header -->
-      <header>
+    <!-- Header -->
+    <header>
+      <div class="container">
         <nav class="navbar">
           <a class="nav-logo" href="./index.html">
             <img src="./images/logo.svg" alt="" />
@@ -43,11 +43,9 @@
             <li class="nav-item">View plans</li>
           </ul>
         </nav>
-      </header>
-
-      <!-- Main -->
-      <main>
-        <section class="hero">
+      </div>
+      <section class="hero">
+        <div class="hero__wrapper">
           <section class="hero__heading">
             <h1>Humanizing your insurance.</h1>
             <p class="hero__description">
@@ -59,58 +57,69 @@
           </section>
           <section class="hero__img-section">
             <picture class="hero-img">
+              <source
+                media="(min-width:376px)"
+                srcset="./images/image-intro-desktop.jpg"
+                type="image"
+              />
               <img src="./images/image-intro-mobile.jpg" alt="" />
             </picture>
           </section>
-        </section>
-
+        </div>
+      </section>
+    </header>
+    <div class="container">
+      <!-- Main -->
+      <main>
         <section class="features">
           <h2 class="features__heading">We’re different</h2>
-          <article class="features__feature">
-            <picture>
-              <img
-                class="feature__img"
-                src="./images/icon-snappy-process.svg"
-                alt="snappy process"
-              />
-            </picture>
-            <h3>Snappy Process</h3>
-            <p class="feature__description">
-              Our application process can be completed in minutes, not hours.
-              Don’t get stuck filling in tedious forms.
-            </p>
-          </article>
-          <article class="features__feature">
-            <picture>
-              <img
-                class="feature__img"
-                src="./images/icon-affordable-prices.svg"
-                alt="Affordable Prices"
-              />
-            </picture>
-            <h3>Affordable Prices</h3>
-            <p class="feature__description">
-              We don’t want you worrying about high monthly costs. Our prices
-              may be low, but we still offer the best coverage possible.
-            </p>
-          </article>
-          <article class="features__feature">
-            <picture>
-              <img
-                class="feature__img"
-                src="./images/icon-people-first.svg"
-                alt="People First"
-              />
-            </picture>
-            <h3>People First</h3>
-            <p class="feature__description">
-              Our plans aren’t full of conditions and clauses to prevent
-              payouts. We make sure you’re covered when you need it.
-            </p>
-          </article>
+          <div class="features_wrapper">
+            <article class="features__feature">
+              <picture>
+                <img
+                  class="feature__img"
+                  src="./images/icon-snappy-process.svg"
+                  alt="snappy process"
+                />
+              </picture>
+              <h3>Snappy Process</h3>
+              <p class="feature__description">
+                Our application process can be completed in minutes, not hours.
+                Don’t get stuck filling in tedious forms.
+              </p>
+            </article>
+            <article class="features__feature">
+              <picture>
+                <img
+                  class="feature__img"
+                  src="./images/icon-affordable-prices.svg"
+                  alt="Affordable Prices"
+                />
+              </picture>
+              <h3>Affordable Prices</h3>
+              <p class="feature__description">
+                We don’t want you worrying about high monthly costs. Our prices
+                may be low, but we still offer the best coverage possible.
+              </p>
+            </article>
+            <article class="features__feature">
+              <picture>
+                <img
+                  class="feature__img"
+                  src="./images/icon-people-first.svg"
+                  alt="People First"
+                />
+              </picture>
+              <h3>People First</h3>
+              <p class="feature__description">
+                Our plans aren’t full of conditions and clauses to prevent
+                payouts. We make sure you’re covered when you need it.
+              </p>
+            </article>
+          </div>
         </section>
         <section class="how-we-work">
-          <h2>Find out more about how we work</h2>
+          <h2 class="how-we-work__heading">Find out more about how we work</h2>
           <a class="btn" href="#"> How we work </a>
         </section>
       </main>
@@ -136,40 +145,42 @@
             </a>
           </div>
         </section>
-        <section class="footer__footer-links">
-          <h3>Our company</h3>
-          <ul class="footer-nav">
-            <li><a class="nav-link" href="#">How we work</a></li>
-            <li><a class="nav-link" href="#">Why Insure?</a></li>
-            <li><a class="nav-link" href="#">Check Price</a></li>
-            <li><a class="nav-link" href="#">Reviews</a></li>
-          </ul>
-        </section>
-        <section class="footer__footer-links">
-          <h3>Help Me</h3>
-          <ul class="footer-nav">
-            <li><a class="nav-link" href="#">FAQ</a></li>
-            <li><a class="nav-link" href="#">Terms of use</a></li>
-            <li><a class="nav-link" href="#">Privacy Policy</a></li>
-            <li><a class="nav-link" href="#">Cookies</a></li>
-          </ul>
-        </section>
-        <section class="footer__footer-links">
-          <h3>Contact</h3>
-          <ul class="footer-nav">
-            <li><a class="nav-link" href="#">Sales</a></li>
-            <li><a class="nav-link" href="#">Support</a></li>
-            <li><a class="nav-link" href="#">Live Chat</a></li>
-          </ul>
-        </section>
-        <section class="footer__footer-links">
-          <h3>Others</h3>
-          <ul class="footer-nav">
-            <li><a class="nav-link" href="#">Careers</a></li>
-            <li><a class="nav-link" href="#">Press</a></li>
-            <li><a class="nav-link" href="#">Licenses</a></li>
-          </ul>
-        </section>
+        <div class="footer__wrapper">
+          <section class="footer__footer-links">
+            <h3>Our company</h3>
+            <ul class="footer-nav">
+              <li><a class="nav-link" href="#">How we work</a></li>
+              <li><a class="nav-link" href="#">Why Insure?</a></li>
+              <li><a class="nav-link" href="#">Check Price</a></li>
+              <li><a class="nav-link" href="#">Reviews</a></li>
+            </ul>
+          </section>
+          <section class="footer__footer-links">
+            <h3>Help Me</h3>
+            <ul class="footer-nav">
+              <li><a class="nav-link" href="#">FAQ</a></li>
+              <li><a class="nav-link" href="#">Terms of use</a></li>
+              <li><a class="nav-link" href="#">Privacy Policy</a></li>
+              <li><a class="nav-link" href="#">Cookies</a></li>
+            </ul>
+          </section>
+          <section class="footer__footer-links">
+            <h3>Contact</h3>
+            <ul class="footer-nav">
+              <li><a class="nav-link" href="#">Sales</a></li>
+              <li><a class="nav-link" href="#">Support</a></li>
+              <li><a class="nav-link" href="#">Live Chat</a></li>
+            </ul>
+          </section>
+          <section class="footer__footer-links">
+            <h3>Others</h3>
+            <ul class="footer-nav">
+              <li><a class="nav-link" href="#">Careers</a></li>
+              <li><a class="nav-link" href="#">Press</a></li>
+              <li><a class="nav-link" href="#">Licenses</a></li>
+            </ul>
+          </section>
+        </div>
       </footer>
       <div class="attribution">
         Challenge by

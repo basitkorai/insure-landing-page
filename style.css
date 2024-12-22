@@ -50,6 +50,7 @@ a {
 
 .container {
   margin: 0 0 1rem 0;
+  margin-inline: auto;
 }
 
 .navbar {
@@ -79,20 +80,22 @@ a {
 }
 
 .hero {
+  background-color: var(--clr-violet-500);
+}
+
+.hero__wrapper {
   display: flex;
   flex-direction: column;
 }
 
 .hero__heading {
-  background-color: var(--clr-violet-500);
   color: var(--clr-light-dark);
   order: 2;
   padding: 6rem 1.3rem;
 }
 
-h1,
-h2 {
-  font-size: 2.8rem;
+h1 {
+  font-size: clamp(1rem, 1rem + 50vw, 4rem);
   margin-top: 0;
 }
 
@@ -105,7 +108,6 @@ h2 {
   font-weight: var(--fw-700);
   letter-spacing: 2px;
   background-color: transparent;
-  border: none;
   color: var(--clr-light-dark);
   text-transform: uppercase;
   border: 2px solid;
@@ -114,11 +116,14 @@ h2 {
 }
 
 .hero__img-section {
+  width: 100%;
   order: -1;
 }
 
 .features {
-  padding: 5rem 2rem;
+  padding: 5rem 0rem;
+}
+.features_wrapper {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -145,6 +150,9 @@ h2 {
   margin: 0 1.2rem;
   margin-bottom: 5rem;
   padding: 5rem 1.4rem;
+}
+.how-we-work__heading {
+  font-size: clamp(1rem, 1rem + 50vw, 3.5rem);
 }
 .footer {
   border-top: 2px solid blue;
@@ -196,4 +204,76 @@ h2 {
 
 .nav-link {
   color: var(--clr-violet-dark-900);
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    text-align: left;
+  }
+
+  .container {
+    width: 80%;
+  }
+  .hero__wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero__wrapper > * {
+    padding-inline: 0;
+  }
+
+  .hero__heading {
+    order: -1;
+  }
+
+  .hero__img-section {
+    order: 2;
+  }
+
+  .features_wrapper {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .features__feature {
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .how-we-work {
+    padding-inline: 0rem;
+    margin: 0;
+    padding: 4rem 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .how-we-work__heading {
+    width: 50%;
+    margin: 0;
+  }
+
+  .footer {
+    /* border: 2px solid black; */
+  }
+
+  .footer__social-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__footer-links > h3 {
+    padding: 0;
+  }
+  .footer__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10rem;
+  }
 }
