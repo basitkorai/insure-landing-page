@@ -51,6 +51,7 @@ h4 {
 .btn {
   font-size: 0.7rem;
   font-weight: var(--fw-700);
+  font-family: var(--ff-karla);
   letter-spacing: 2px;
   background-color: transparent;
   color: var(--clr-light-dark);
