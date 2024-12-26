@@ -30,18 +30,31 @@
     <header>
       <div class="container">
         <nav class="navbar">
-          <a class="nav-logo" href="./index.html">
-            <img src="./images/logo.svg" alt="" />
-          </a>
-          <button class="btn-ham">
-            <img src="./images/icon-hamburger.svg" alt="" srcset="" />
-          </button>
-          <ul class="navlist">
-            <li class="nav-item">How we work</li>
-            <li class="nav-item">Blog</li>
-            <li class="nav-item">Account</li>
-            <li class="nav-item">View plans</li>
-          </ul>
+          <div class="nav-wrapper">
+            <a class="nav-logo" href="./index.html">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+            <button class="btn-ham" aria-expanded="false">
+              <img
+                class="img-ham"
+                src="./images/icon-hamburger.svg"
+                alt=""
+                srcset=""
+              />
+            </button>
+          </div>
+          <div class="navlist-wrapper hidden">
+            <ul class="navlist">
+              <li class="nav-item">
+                <a class="nav-link" href="#">How we work</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+              <li class="nav-item btn">
+                <a class="nav-link" href="#">View Plans</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
       <section class="hero">
@@ -58,9 +71,8 @@
           <section class="hero__img-section">
             <picture class="hero-img">
               <source
-                media="(min-width:376px)"
+                media="(min-width: 376px)"
                 srcset="./images/image-intro-desktop.jpg"
-                type="image"
               />
               <img src="./images/image-intro-mobile.jpg" alt="" />
             </picture>
@@ -149,35 +161,35 @@
           <section class="footer__footer-links">
             <h3>Our company</h3>
             <ul class="footer-nav">
-              <li><a class="nav-link" href="#">How we work</a></li>
-              <li><a class="nav-link" href="#">Why Insure?</a></li>
-              <li><a class="nav-link" href="#">Check Price</a></li>
-              <li><a class="nav-link" href="#">Reviews</a></li>
+              <li><a class="footer-nav-link" href="#">How we work</a></li>
+              <li><a class="footer-nav-link" href="#">Why Insure?</a></li>
+              <li><a class="footer-nav-link" href="#">Check Price</a></li>
+              <li><a class="footer-nav-link" href="#">Reviews</a></li>
             </ul>
           </section>
           <section class="footer__footer-links">
             <h3>Help Me</h3>
             <ul class="footer-nav">
-              <li><a class="nav-link" href="#">FAQ</a></li>
-              <li><a class="nav-link" href="#">Terms of use</a></li>
-              <li><a class="nav-link" href="#">Privacy Policy</a></li>
-              <li><a class="nav-link" href="#">Cookies</a></li>
+              <li><a class="footer-nav-link" href="#">FAQ</a></li>
+              <li><a class="footer-nav-link" href="#">Terms of use</a></li>
+              <li><a class="footer-nav-link" href="#">Privacy Policy</a></li>
+              <li><a class="footer-nav-link" href="#">Cookies</a></li>
             </ul>
           </section>
           <section class="footer__footer-links">
             <h3>Contact</h3>
             <ul class="footer-nav">
-              <li><a class="nav-link" href="#">Sales</a></li>
-              <li><a class="nav-link" href="#">Support</a></li>
-              <li><a class="nav-link" href="#">Live Chat</a></li>
+              <li><a class="footer-nav-link" href="#">Sales</a></li>
+              <li><a class="footer-nav-link" href="#">Support</a></li>
+              <li><a class="footer-nav-link" href="#">Live Chat</a></li>
             </ul>
           </section>
           <section class="footer__footer-links">
             <h3>Others</h3>
             <ul class="footer-nav">
-              <li><a class="nav-link" href="#">Careers</a></li>
-              <li><a class="nav-link" href="#">Press</a></li>
-              <li><a class="nav-link" href="#">Licenses</a></li>
+              <li><a class="footer-nav-link" href="#">Careers</a></li>
+              <li><a class="footer-nav-link" href="#">Press</a></li>
+              <li><a class="footer-nav-link" href="#">Licenses</a></li>
             </ul>
           </section>
         </div>
@@ -189,5 +201,6 @@
         >. Coded by <a href="#">Basit Korai</a>.
       </div>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
