@@ -58,7 +58,7 @@ h4 {
   border: 2px solid;
   padding: 1em 2em;
   text-decoration: none;
-  max-width: fit-content;
+  min-width: min-content;
 }
 
 .btn:hover {
@@ -94,7 +94,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: 100%;
+  min-width: 100%;
   /* gap: 2rem; */
   margin: 0;
   padding: 1.5rem;
