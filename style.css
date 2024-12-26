@@ -58,6 +58,7 @@ h4 {
   border: 2px solid;
   padding: 1em 2em;
   text-decoration: none;
+  max-width: fit-content;
 }
 
 .btn:hover {
@@ -160,6 +161,10 @@ h2 {
   order: -1;
 }
 
+.hero-img > img {
+  min-width: 100%;
+}
+
 .features {
   padding: 5rem 1.85rem;
 }
@@ -254,18 +259,43 @@ h2 {
   color: var(--clr-violet-dark-900);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   body {
     text-align: left;
   }
 
   .container {
-    width: 80%;
+    width: 60%;
   }
+
+  h1::before {
+    width: 20px;
+    height: 10px;
+    background-color: var(--clr-light-dark);
+    position: absolute;
+  }
+
+  h1 {
+    font-size: clamp(1rem, 1rem + 50vw, 4.5rem);
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    line-height: 0.9;
+  }
+
+  .new-line {
+    display: block;
+  }
+
+  .hero {
+    padding-block: 5.8rem;
+  }
+
   .hero__wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 80%;
+    gap: 1.5rem;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -275,10 +305,18 @@ h2 {
 
   .hero__heading {
     order: -1;
+    padding-block: 3rem;
+    display: grid;
+    gap: 0.8rem;
   }
 
   .hero__img-section {
     order: 2;
+    position: relative;
+  }
+
+  .hero-img > img {
+    position: absolute;
   }
 
   .features_wrapper {
