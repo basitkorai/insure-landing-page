@@ -268,6 +268,15 @@ h2 {
     width: 60%;
   }
 
+  .nav-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .nav-wrapper {
+    padding-inline: 0;
+  }
+
   h1::before {
     width: 20px;
     height: 10px;
@@ -276,15 +285,11 @@ h2 {
   }
 
   h1 {
-    font-size: clamp(1rem, 1rem + 50vw, 4.5rem);
+    font-size: clamp(1rem, 1rem + 50vw, 4rem);
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
     line-height: 0.9;
-  }
-
-  .new-line {
-    display: block;
   }
 
   .hero {
@@ -293,7 +298,7 @@ h2 {
 
   .hero__wrapper {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 48%;
     gap: 1.5rem;
     width: 70%;
     margin: 0 auto;
@@ -313,10 +318,12 @@ h2 {
   .hero__img-section {
     order: 2;
     position: relative;
+    max-width: 100%;
   }
 
   .hero-img > img {
     position: absolute;
+    max-width: 90%;
   }
 
   .features_wrapper {
