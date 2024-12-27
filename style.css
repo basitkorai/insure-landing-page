@@ -160,7 +160,6 @@ h1 {
 
 h2 {
   font-size: clamp(1rem, 1rem + 50vw, 2.8rem);
-  margin-top: 8rem;
 }
 
 .hero__description {
@@ -181,6 +180,7 @@ h2 {
 }
 
 .features > h2 {
+  margin-top: 8rem;
   margin-bottom: 5.313rem;
 }
 .features_wrapper {
@@ -207,15 +207,24 @@ h2 {
 .feature__description {
   margin-top: 0;
 }
-
+.how-we-work:before {
+  content: url(/images/bg-pattern-how-we-work-mobile.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
 .how-we-work {
   background-color: var(--clr-violet-500);
   color: var(--clr-light-dark);
   margin: 0 1.2rem;
   margin-bottom: 5rem;
   padding: 5rem 1.4rem;
+  position: relative;
 }
 .how-we-work__heading {
+  position: relative;
+  z-index: 2;
   font-size: clamp(1rem, 1rem + 50vw, 2.688rem);
 }
 .footer {
