@@ -308,6 +308,10 @@ h2 {
   .btn {
     width: fit-content;
   }
+  .btn-nav {
+    color: var(--clr-violet-500);
+    padding: 0.7rem 1.5rem;
+  }
 
   .btn-nav:hover {
     background-color: var(--clr-violet-dark-900);
@@ -368,7 +372,7 @@ h2 {
 
   .hero__heading {
     order: -1;
-    padding-block: 3rem;
+    padding-block: 3.8rem;
     display: grid;
     gap: 0.8rem;
   }
