@@ -160,6 +160,7 @@ h1 {
 
 h2 {
   font-size: clamp(1rem, 1rem + 50vw, 2.8rem);
+  margin-top: 8rem;
 }
 
 .hero__description {
@@ -327,7 +328,7 @@ h2 {
   }
 
   .container {
-    width: 60%;
+    width: 70%;
   }
 
   .nav-container {
@@ -339,14 +340,16 @@ h2 {
     padding-inline: 0;
   }
 
-  h1::before {
-    width: 20px;
-    height: 10px;
+  .hero__wrapper::before {
+    content: '';
+    width: 150px;
+    height: 1px;
     background-color: var(--clr-light-dark);
     position: absolute;
   }
 
-  h1 {
+  h1,
+  h2 {
     font-size: clamp(1rem, 1rem + 50vw, 4.5rem);
     margin-top: 0;
     margin-bottom: 0;
@@ -388,6 +391,23 @@ h2 {
     max-width: 90%;
   }
 
+  .features {
+    padding-inline: 0;
+    padding-top: 25rem;
+  }
+
+  .features__heading::before {
+    content: '';
+    width: 150px;
+    height: 1px;
+    background-color: var(--clr-violet-dark-900);
+    position: absolute;
+    top: -4rem;
+  }
+
+  .features__heading {
+    position: relative;
+  }
   .features_wrapper {
     flex-direction: row;
     gap: 3rem;
