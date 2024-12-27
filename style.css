@@ -288,6 +288,10 @@ h2 {
   .btn-ham {
     display: none;
   }
+
+  .btn {
+    width: fit-content;
+  }
 }
 
 @media screen and (min-width: 800px) {
